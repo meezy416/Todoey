@@ -13,7 +13,8 @@
 		AB7D368C2285F4BD00761D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7D368A2285F4BD00761D72 /* Main.storyboard */; };
 		AB7D368E2285F4C100761D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7D368D2285F4C100761D72 /* Assets.xcassets */; };
 		AB7D36912285F4C100761D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7D368F2285F4C100761D72 /* LaunchScreen.storyboard */; };
-		ABA4C8462288F53D00618946 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABA4C8442288F53D00618946 /* DataModel.xcdatamodeld */; };
+		AB8E5EF0228C88540080F0BA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E5EEF228C88540080F0BA /* Item.swift */; };
+		AB8E5EF2228C88690080F0BA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E5EF1228C88690080F0BA /* Category.swift */; };
 		ABA4C869228B3BF800618946 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA4C868228B3BF800618946 /* CategoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,8 @@
 		AB7D368D2285F4C100761D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7D36902285F4C100761D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB7D36922285F4C100761D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABA4C8452288F53D00618946 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		AB8E5EEF228C88540080F0BA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AB8E5EF1228C88690080F0BA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		ABA4C868228B3BF800618946 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +52,6 @@
 				180C3797A4CA8A3E806A790B /* Pods-Todoey.debug.xcconfig */,
 				16449136EAF0D4DBCE13FA2F /* Pods-Todoey.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -97,7 +98,8 @@
 		ABA4C8412286834F00618946 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				ABA4C8442288F53D00618946 /* DataModel.xcdatamodeld */,
+				AB8E5EF1228C88690080F0BA /* Category.swift */,
+				AB8E5EEF228C88540080F0BA /* Item.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -249,10 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8E5EF0228C88540080F0BA /* Item.swift in Sources */,
 				AB7D36892285F4BD00761D72 /* TodoListViewController.swift in Sources */,
-				ABA4C8462288F53D00618946 /* DataModel.xcdatamodeld in Sources */,
 				AB7D36872285F4BD00761D72 /* AppDelegate.swift in Sources */,
 				ABA4C869228B3BF800618946 /* CategoryTableViewController.swift in Sources */,
+				AB8E5EF2228C88690080F0BA /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,19 +457,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		ABA4C8442288F53D00618946 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				ABA4C8452288F53D00618946 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = ABA4C8452288F53D00618946 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AB7D367B2285F4BD00761D72 /* Project object */;
 }
